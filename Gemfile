@@ -1,3 +1,6 @@
+# biblioteca para upload de imagens
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
