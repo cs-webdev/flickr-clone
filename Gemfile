@@ -40,6 +40,8 @@ group :test do
   gem 'rspec-rails', '~> 3.0.0'
 end
 
+
+gem 'clearance'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

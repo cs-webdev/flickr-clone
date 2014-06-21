@@ -5,6 +5,6 @@ feature 'Guest view the Explore page' do
 		Image.create title: 'Hello World', description: 'stuff', author: 'manel'
 		visit root_path
 
-		expect(page).to have_text 'Hello World'
-	end
+        expect(page).to have_text 'Hello World'
+    end
 end
