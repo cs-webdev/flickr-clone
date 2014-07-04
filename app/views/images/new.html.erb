@@ -1,7 +1,13 @@
-<h1>Images</h1>
+<h1>Add new Image</h1>
 
-<%= form_for @image, :html => { :multipart => true } do |form| %>
-  <%= form.file_field :file %>
-
-  <%= form.submit %>
+<% if signed_in? %>
+  <%= form_for @image, :html => { :multipart => true } do |form| %>
+	  <%= form.file_field :file %>
+	  <%= form.submit %>
+	<% end %>
+<% else %>
+	<h2>You need to <%= link_to 'Sign in', sign_in_path %></h2>
 <% end %>
+
+
+
