@@ -1,7 +1,6 @@
 Flickr::Application.routes.draw do
-  get "users/index"
-  get "users/allusers"
-  get "users/register"
-
+  resources :users, only: [:show, :index]
+  resources :images
+  
   root to: 'users#index'
 end

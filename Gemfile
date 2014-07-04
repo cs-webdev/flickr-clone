@@ -36,7 +36,7 @@ group :doc do
 end
 
 group :test do
-	gem 'capybara'
+  gem 'capybara'
   gem 'rspec-rails', '~> 3.0.0'
 end
 
