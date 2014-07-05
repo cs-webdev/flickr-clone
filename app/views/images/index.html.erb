@@ -6,10 +6,10 @@
 	</div>
 	<% @images.each do |image|%>
 		<div class="row section-row">
-			<div class="col-md-8">
+			<div class="col-md-7">
 				<%= image_tag image.file.url(:medium) %>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-5">
 				<h4>Uploaded by <br /><%= link_to image.user.email, user_path(image.user)%></h4>
 			</div>
 		</div>
@@ -19,6 +19,7 @@
 			</div>
 		</div>
 		<div class="row section-row"></div>
+		<hr />
 	<% end %>
 </div>
 
