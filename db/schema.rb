@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20140621161548) do
 
   create_table "images", force: true do |t|
-    t.string   "name"
+    t.string   "title"
     t.string   "description"
     t.integer  "user_id"
     t.string   "file_file_name"
