@@ -7,6 +7,10 @@ $light-grey: #d3d3d3;
   border: 0px solid #fe0000;
 }
 
+body {
+  background-color: #e7e7e7;
+}
+
 #container {
   margin: 10px 0 0 20px;
 }
@@ -15,12 +19,19 @@ $light-grey: #d3d3d3;
   margin: 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .mainbar-header,
 .mainbar-header a {
   color: $light-grey;
   width: 100%;
 
-   ul li{
+  ul {
+    margin-top: 10px;
+
+    li{
       color: $white;
       list-style-type: none;
       font-family: Arial;
@@ -32,6 +43,7 @@ $light-grey: #d3d3d3;
       a {
         color: $white;
         text-decoration: none !important;
+        font-size: 16px;
 
         &:hover {
           color: $light-grey;
@@ -39,13 +51,14 @@ $light-grey: #d3d3d3;
         }
       }
     }
+  }
 }
 
 .mainbar-fix-top {
     top: 0;
     left: 0;
     width: 100%;
-    height: 40px;
+    height: 60px;
     background-color: $blue;
     position: left;
 
@@ -64,6 +77,11 @@ $light-grey: #d3d3d3;
 .form-container {
   top: 200px;
   left: 300px;
+}
+
+.section-row {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .sign-form {

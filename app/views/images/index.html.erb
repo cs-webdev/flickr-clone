@@ -1,5 +1,24 @@
-<div class="container-fluid">
+<div class="container">
+	<div class="row section-row">
+		<div class="col-md-12">
+			<h2>Latest Uploads</h2>
+		</div>
+	</div>
 	<% @images.each do |image|%>
-	  <div><%= image_tag image.file.url(:medium) %></div>
+		<div class="row section-row">
+			<div class="col-md-8">
+				<%= image_tag image.file.url(:medium) %>
+			</div>
+			<div class="col-md-4">
+				<h4>Uploaded by <br /><%= link_to image.user.email, user_path(image.user)%></h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h5><strong><%= image.title %></strong> - <%= image.description %></h5>
+			</div>
+		</div>
+		<div class="row section-row"></div>
 	<% end %>
 </div>
+

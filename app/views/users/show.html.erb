@@ -1,7 +1,31 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
-<div><%= @user.email %></div><br />
-<h2>My uploads</h2>
-<% @images.each do |image|%>
-  <div><%= image_tag image.file.url(:medium) %></div>
-<% end %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>My Profile</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>Email: <a href="malito:<%= @user.email %>"><%= @user.email %></a></h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>Find me in <%= link_to user_url(@user)%></h3>
+		</div>
+	</div>
+	
+	<div class="row section-row">
+		<div class="col-md-12">
+			<h2>My Images</h2>
+		</div>
+	</div>
+
+	<% @images.each do |image|%>
+	  	<div class="row section-row">
+				<div class="col-md-12">
+					<div><%= image_tag image.file.url(:medium) %></div>
+				</div>
+			</div>
+	<% end %>
+</div>
