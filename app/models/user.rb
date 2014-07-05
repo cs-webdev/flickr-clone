@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
   include Clearance::User
 
-  has_many :photos, dependent: :destroy
+  has_many :images, dependent: :destroy
 end

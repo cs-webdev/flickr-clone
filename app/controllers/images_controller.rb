@@ -16,7 +16,7 @@ class ImagesController < ApplicationController
   end
 
   def create
-  	@image = Image.new(image_params)
+    @image = current_user.images.build(image_params)
     if @image.save
       redirect_to images_path
     else

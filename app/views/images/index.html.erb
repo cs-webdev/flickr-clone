@@ -1,5 +1,5 @@
-<br />
-<% @images.each do |image|%>
-  <div><%= image_tag image.file.url(:medium) %></div>
-<% end %>
-
+<div class="container-fluid">
+	<% @images.each do |image|%>
+	  <div><%= image_tag image.file.url(:medium) %></div>
+	<% end %>
+</div>
